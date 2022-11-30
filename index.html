@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+    <!-- <div class="container">
+        <h2>Danh sách sinh viên</h2>
+        <form action="" method="post">
+            <div class="form-group">
+                <input type="number" id="diem">
+                <button type="button" onclick="loc_diem()">Tim kiem</button>
+            </div>
+            <div class="form-group">
+                <label for="">Điểm toán</label>
+                <select class="form-control"id="sapxep" onchange="sap_xep_theo_diem(this)">
+                  <option value="">Mặc định</option>
+                  <option value="tang">Tăng dần</option>
+                  <option value="giam">Giảm dần</option>
+                </select>
+              </div>
+        </form>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Mã SV</th>
+                    <th>Họ Tên</th>
+                    <th>Điểm toán</th>
+                    <th>Điểm lý</th>
+                    <th>Điểm hóa</th>
+                    <th>Điểm TB</th>
+                    <th>Xếp loại</th>
+                </tr>
+            </thead>
+            <tbody id="tbody-list">
+           
+             
+            </tbody>
+        </table>
+    </div> -->
+    <div class="container">
+       <div class="row">
+        <div class="col-md-4">
+            <form action="" method="POST" id="std_form">
+                <h3>Form thêm mới</h3>
+                <div class="form-group">
+                  <label for="">Mã sinh viên</label>
+                  <input type="text" name="code" id="code" class="form-control" placeholder="" aria-describedby="helpId">
+                </div>
+                <div class="form-group">
+                    <label for="">Họ tên</label>
+                    <input type="text" name="fullname" id="fullname" class="form-control" placeholder="" aria-describedby="helpId">
+                  </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label for="">Điểm toán</label>
+                            <input type="text" name="" id="toan" class="form-control" placeholder="" aria-describedby="helpId">
+                          </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label for="">Điểm lý</label>
+                            <input type="text" name="" id="ly" class="form-control" placeholder="" aria-describedby="helpId">
+                          </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label for="">Điểm Hóa</label>
+                            <input type="text" name="" id="hoa" class="form-control" placeholder="" aria-describedby="helpId">
+                        </div>
+                    </div>
+                </div>
+                     
+                  
+                  <button type="button" class="btn btn-success" id="add_student">Thêm mới</button>
+                  <button type="button" class="btn btn-info" id="update_student" style="display: none;">Cập nhật</button>
+            </form>
+        </div>
+        <div class="col-md-8">
+            <h3>Danh sách sinh viên</h3>
+            <div class="form-group col-md-8">
+              <label for=""></label>
+              <div class="row">
+                <input type="text" name="search" id="search_code" class="form-control col-md-5" style="margin-right:2% ;" placeholder="" aria-describedby="helpId">
+                <button class="btn btn-primary col-md-2 search_student" type="button" >Lọc</button>
+              </div>
+            </div>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Masv</th>
+                        <th>Ho ten</th>
+                        <th>Toan</th>
+                        <th>ly</th>
+                        <th>Hoa</th>
+                        <th>Diem TB</th>
+                        <th>Xếp loại</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody2">
+                
+                </tbody>
+            </table>
+        </div>
+       </div>
+      
+    </div>
+    <!-- <h3 id="demo"></h3> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="dist/code.js"></script>
+    <!-- <script src="dist/app.js"></script> -->
+    <!-- <script src="dist/class.js"></script> -->
+    <script src="dist/system.js"></script> -->
+    <script>
+        System.import('./dist/class.js');
+    </script> 
+</body>
+</html>

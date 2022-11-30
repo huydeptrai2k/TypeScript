@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+   "module": "System",//module nền
+   "target": "ES6",
+   "rootDir": "./typescript",
+   "outDir": "./dist",
+   "removeComments": true,
+   "experimentalDecorators": true
+  }
+}
